@@ -59,3 +59,14 @@ colPerc(table1)
 
 There are 83% of white people go eat out and 17% who don't go out and eat, For black people there are 69% who do go out and eat and there are 31% who don't go eat out, For the others there are 78% who do go out to eat and there are 22% who don't go out to eat.
 
+# Inferential 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+```{r}
+fisherXY(mydata$race,mydata$eatout, printAll = TRUE)
+```
+
