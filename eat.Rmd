@@ -49,4 +49,13 @@ barchartGC(~race + eatout,data=mydata, type="percent")
 
 This graph shows us that there are about 610 white people who eat out often and about 150 white that don't eat out. There are about 95 black people who eat out and about 40 black people who don't go eat out. About 40 others go and eat out and about 10 don't go eat out. In other words 85% of white people go eat out and 15% of white people don't go eat out, for black people about 70% go and eat out and about 25% don't go eat out, for the others about 75% go and eat out and about 20% don't go eat out.
 
-\
+# Numerical 
+
+```{r}
+table1 <- xtabs(~race + eatout, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+There are 83% of white people go eat out and 17% who don't go out and eat, For black people there are 69% who do go out and eat and there are 31% who don't go eat out, For the others there are 78% who do go out to eat and there are 22% who don't go out to eat.
+
